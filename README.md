@@ -39,8 +39,8 @@ represents `x = 2 ± 0.01`.
 
 ### Problems
 
-These problems are of varying difficulty, and you can consder them in any order. 
-The scope and assumption specifics for each problem are intentionally left open-ended.
+The following problems are of varying difficulty, and you can consder them in any order. 
+The scope and specific assumptions are intentionally left open-ended.
 It is encouraged that you think about these problems on pen and paper before writing any code.
 
 1. How do you represent a circle of center 1.0 and radius 0.5 using `BilinearEquation`?
