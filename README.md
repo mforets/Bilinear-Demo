@@ -30,7 +30,7 @@ julia> Variable("x", 2.0)
 Variable("x", 2.0, nothing)
 ```
 The third field corresponds to an uncertainty assignment, eg.
-```
+```julia
 julia> Variable("x", 2.0, 0.01)
 Variable("x", 2.0, 0.01)
 ```
@@ -49,5 +49,5 @@ It is encouraged that you think about these problems on pen and paper before wri
 4. Design a method `substitute(sys::BilinearSystem, var::Variable)` to substitute for a given variable `var`, obtaining a new `BilinearSystem`.
 5. Design a method `solve(eq::BilinearEquation)` to solve the equation, assuming that `eq` has a unique variable.
 6. Design a method to evaluate the Jacobian matrix `jacobian(sys::BilinearSystem, vals::Vector{Variable})` for a given vector of variables. Again, assume that all variables are determined.
-7. How would you extend the `solve` method for the multivariate case, `BilinearSystem`?
+7. Discuss different approaches to extend the `solve` method for the multivariate case `BilinearSystem`.
 
