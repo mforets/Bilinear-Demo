@@ -17,19 +17,19 @@ A demonstrational project for modeling bilinear systems of equations in Julia.
 
 ### Preliminaries
 
-We say that a variable is determined if it has a specified value. For example,
+We say that a variable is determined if it has a specified value. For example, in
 
 ```julia
 julia> Variable("x")
 Variable("x", nothing, nothing)
 ```
-is not determined, while the following corresponds to setting `x = 2`:
+variable `x` is not determined, while the following corresponds to setting `x = 2`:
 
 ```julia
 julia> Variable("x", 2.0)
 Variable("x", 2.0, nothing)
 ```
-An uncertainty can be defined as well, eg.
+The third field corresponds to an uncertainty assignment, eg.
 ```
 julia> Variable("x", 2.0, 0.01)
 Variable("x", 2.0, 0.01)
@@ -38,6 +38,8 @@ represents `x = 2 ± 0.01`.
 
 
 ### Problems
+
+It is encouraged that you solve these problems on pen and paper before writing any code.
 
 1. Design a method to evaluate a system of bilinear equations for a given vector of variables: `evaluate(sys::BilinearSystem, vals::Vector{Variable})`. Assume that all variables have specified numbers (`Float64`).
 2. Design a method `substitute(sys::BilinearSystem, var::Variable)` to substitute for a given variable `var`, obtaining a new `BilinearSystem`. Do not assume that all variables are determined.
