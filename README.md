@@ -41,9 +41,9 @@ represents `x = 2 ± 0.01`.
 
 It is encouraged that you solve these problems on pen and paper before writing any code.
 
-1. Design a method to evaluate a system of bilinear equations for a given vector of variables: `evaluate(sys::BilinearSystem, vals::Vector{Variable})`. Assume that all variables have specified numbers (`Float64`).
-2. Design a method `substitute(sys::BilinearSystem, var::Variable)` to substitute for a given variable `var`, obtaining a new `BilinearSystem`. Do not assume that all variables are determined.
-3. Design a method `solve(eq::BilinearEquation)` to solve the equation, assuming that `eq` only has one unique variable label.
-4. Design a method to evaluate the Jacobian matrix `jacobian(sys::BilinearSystem, vals::Vector{Variable})` for a given vector of variables.
-5. Extend the `solve` method for the multivariate case, `BilinearSystem`.
+1. Design a method to evaluate a system of bilinear equations for a given vector of variables: `evaluate(sys::BilinearSystem, vals::Vector{Variable})`. Assume that all variables are determined.
+2. Design a method `substitute(sys::BilinearSystem, var::Variable)` to substitute for a given variable `var`, obtaining a new `BilinearSystem`.
+3. Design a method `solve(eq::BilinearEquation)` to solve the equation, assuming that `eq` has a unique variable.
+4. Design a method to evaluate the Jacobian matrix `jacobian(sys::BilinearSystem, vals::Vector{Variable})` for a given vector of variables. Again, assume that all variables are determined.
+5. How would you extend the `solve` method for the multivariate case, `BilinearSystem`?
 
