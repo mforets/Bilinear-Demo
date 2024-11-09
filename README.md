@@ -39,11 +39,15 @@ represents `x = 2 ± 0.01`.
 
 ### Problems
 
-It is encouraged that you solve these problems on pen and paper before writing any code.
+These problems are of varying difficulty, and you can consder them in any order. 
+The scope and assumption specifics for each problem are intentionally left open-ended.
+It is encouraged that you think about these problems on pen and paper before writing any code.
 
-1. Design a method to evaluate a system of bilinear equations for a given vector of variables: `evaluate(sys::BilinearSystem, vals::Vector{Variable})`. Assume that all variables are determined.
-2. Design a method `substitute(sys::BilinearSystem, var::Variable)` to substitute for a given variable `var`, obtaining a new `BilinearSystem`.
-3. Design a method `solve(eq::BilinearEquation)` to solve the equation, assuming that `eq` has a unique variable.
-4. Design a method to evaluate the Jacobian matrix `jacobian(sys::BilinearSystem, vals::Vector{Variable})` for a given vector of variables. Again, assume that all variables are determined.
-5. How would you extend the `solve` method for the multivariate case, `BilinearSystem`?
+1. How do you represent a circle of center 1.0 and radius 0.5 using `BilinearEquation`?
+2. How do you model a basic SIR model (see the wikipedia article for [The SIR model without birth and date](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology))?   
+3. Design a method to evaluate a system of bilinear equations for a given vector of variables: `evaluate(sys::BilinearSystem, vals::Vector{Variable})`. Assume that all variables are determined.
+4. Design a method `substitute(sys::BilinearSystem, var::Variable)` to substitute for a given variable `var`, obtaining a new `BilinearSystem`.
+5. Design a method `solve(eq::BilinearEquation)` to solve the equation, assuming that `eq` has a unique variable.
+6. Design a method to evaluate the Jacobian matrix `jacobian(sys::BilinearSystem, vals::Vector{Variable})` for a given vector of variables. Again, assume that all variables are determined.
+7. How would you extend the `solve` method for the multivariate case, `BilinearSystem`?
 
