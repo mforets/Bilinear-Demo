@@ -9,7 +9,7 @@ A demonstrational project for modeling bilinear systems of equations in Julia.
 2. Clone this git repository.
 
 3. cd to the `julia` folder and do `julia --project=.` (assuming that you have `julia` available in your OS path).
-  - Note that in a typical Julia package you would also `] instantiate` the dependencies (downloading and precompilation), but this project has no dependencies so that step is not required.
+    - Note that in a typical Julia package you would also `] instantiate` the dependencies (downloading and precompilation), but this project has no dependencies so that step is not required.
 
 4. Do `using BilinearDemo` to load the module under `julia/src`. Then you should be able to run the example in the module's docstring.
 
